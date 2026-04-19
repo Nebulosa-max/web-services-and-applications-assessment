@@ -89,111 +89,161 @@ Tasks are stored in the database and linked both to:
 
 ## Project Structure
 
-```text
-web-services-and-applications-assessment/
-│
-├── app.py
-├── config.py
-├── README.md
-├── references.md
-├── ai_prompts.md
-├── requirements.txt
-├── .gitignore
-│
-├── models/
-│   ├── __init__.py
-│   ├── user.py
-│   ├── subject.py
-│   └── task.py
-│
-├── routes/
-│   ├── __init__.py
-│   ├── auth_routes.py
-│   ├── subject_routes.py
-│   └── task_routes.py
-│
-├── templates/
-│   ├── base.html
-│   ├── index.html
-│   ├── login.html
-│   ├── register.html
-│   └── dashboard.html
-│
-├── static/
-│   ├── style.css
-│   └── app.js
-│
-└── instance/
-    └── database.db
+    web-services-and-applications-assessment/
+    │
+    ├── app.py
+    ├── config.py
+    ├── README.md
+    ├── references.md
+    ├── ai_prompts.md
+    ├── requirements.txt
+    ├── .gitignore
+    │
+    ├── models/
+    │   ├── __init__.py
+    │   ├── user.py
+    │   ├── subject.py
+    │   └── task.py
+    │
+    ├── routes/
+    │   ├── __init__.py
+    │   ├── auth_routes.py
+    │   ├── subject_routes.py
+    │   └── task_routes.py
+    │
+    ├── templates/
+    │   ├── base.html
+    │   ├── index.html
+    │   ├── login.html
+    │   ├── register.html
+    │   └── dashboard.html
+    │
+    ├── static/
+    │   ├── style.css
+    │   └── app.js
+    │
+    └── instance/
+        └── database.db
 
-   ## Database Structure
+---
+
+## Database Structure
+
 The project currently uses three main tables:
-User
+
+### User
 Stores registered users.
+
 Fields include:
-- id
-- username
-- email
-- password_hash
-- Subject
-- Stores subjects created by each user.
-* Fields include:
-id
-name
-description
-user_id
-Task
+
+- `id`
+- `username`
+- `email`
+- `password_hash`
+
+### Subject
+Stores subjects created by each user.
+
+Fields include:
+
+- `id`
+- `name`
+- `description`
+- `user_id`
+
+### Task
 Stores tasks created by each user.
+
 Fields include:
-id
-title
-description
-due_date
-priority
-completed
-user_id
-subject_id
-Current Application Flow
-A user registers an account.
-The user logs in.
-The user is redirected to the dashboard.
-The user can create subjects.
-The user can create tasks linked to those subjects.
-The user can mark tasks as completed or delete them.
-How to Run the Project
-1. Clone the repository
-git clone https://github.com/Nebulosa-max/web-services-and-applications-assessment.git
-cd web-services-and-applications-assessment
-2. Create and activate a virtual environment
-python3 -m venv .venv
-source .venv/bin/activate
-3. Install dependencies
-pip install -r requirements.txt
-4. Run the application
-python app.py
-5. Open in browser
-http://127.0.0.1:5000
-Current Status
+
+- `id`
+- `title`
+- `description`
+- `due_date`
+- `priority`
+- `completed`
+- `user_id`
+- `subject_id`
+
+---
+
+## Current Application Flow
+
+1. A user registers an account.
+2. The user logs in.
+3. The user is redirected to the dashboard.
+4. The user can create subjects.
+5. The user can create tasks linked to those subjects.
+6. The user can mark tasks as completed or delete them.
+
+---
+
+## How to Run the Project
+
+### 1. Clone the repository
+
+    git clone https://github.com/Nebulosa-max/web-services-and-applications-assessment.git
+    cd web-services-and-applications-assessment
+
+### 2. Create and activate a virtual environment
+
+    python3 -m venv .venv
+    source .venv/bin/activate
+
+### 3. Install dependencies
+
+    pip install -r requirements.txt
+
+### 4. Run the application
+
+    python app.py
+
+### 5. Open in browser
+
+    http://127.0.0.1:5000
+
+---
+
+## Current Status
+
 At this point, the following core components are working:
-Flask application setup
-database creation
-user registration and login
-protected dashboard
-subject creation and deletion
-task creation and deletion
-task completion toggle
-frontend interaction using JavaScript Fetch calls
+
+- Flask application setup
+- database creation
+- user registration and login
+- protected dashboard
+- subject creation and deletion
+- task creation and deletion
+- task completion toggle
+- frontend interaction using JavaScript Fetch calls
+
 This is still an ongoing project and more features will be added.
-Planned Next Steps
+
+---
+
+## Planned Next Steps
+
 The next stages of development may include:
-editing subjects
-editing tasks
-dashboard statistics
-better task filtering
-improved frontend styling
-integration with a third-party API
-deployment of the application
-additional documentation and references
-Notes
+
+- editing subjects
+- editing tasks
+- dashboard statistics
+- better task filtering
+- improved frontend styling
+- integration with a third-party API
+- deployment of the application
+- additional documentation and references
+
+---
+
+## Notes
+
 This repository contains only files related to the project.
+
 The project is being developed incrementally, with regular commits to show progress and maintain consistency.
+
+---
+
+
+
+
