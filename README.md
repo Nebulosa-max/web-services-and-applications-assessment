@@ -18,7 +18,7 @@ The goal of this project is to build a web application that uses:
 - a **database**
 - **RESTful routes**
 - a **web interface**
-- **AJAX/fetch requests**
+- **AJAX / Fetch requests**
 - CRUD functionality
 
 This project is being developed step by step, with the intention of keeping the code well organised, easy to explain, and easy to run.
@@ -28,6 +28,7 @@ This project is being developed step by step, with the intention of keeping the 
 ## Features Implemented So Far
 
 ### 1. User Authentication
+
 The application currently supports:
 
 - user registration
@@ -40,9 +41,8 @@ Authentication is handled using:
 - `Flask-Login`
 - password hashing with Werkzeug
 
----
-
 ### 2. Subject Management
+
 Users can currently manage study subjects from the dashboard.
 
 Implemented subject features:
@@ -53,9 +53,8 @@ Implemented subject features:
 
 Subjects are stored in the database and linked to the authenticated user.
 
----
-
 ### 3. Task Management
+
 Users can currently manage study tasks linked to subjects.
 
 Implemented task features:
@@ -68,6 +67,7 @@ Implemented task features:
 - delete tasks
 
 Tasks are stored in the database and linked both to:
+
 - the authenticated user
 - a selected subject
 
@@ -126,18 +126,18 @@ web-services-and-applications-assessment/
 └── instance/
     └── database.db
 
-   Database Structure
+   ## Database Structure
 The project currently uses three main tables:
 User
 Stores registered users.
 Fields include:
-id
-username
-email
-password_hash
-Subject
-Stores subjects created by each user.
-Fields include:
+- id
+- username
+- email
+- password_hash
+- Subject
+- Stores subjects created by each user.
+* Fields include:
 id
 name
 description
