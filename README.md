@@ -126,7 +126,7 @@ web-services-and-applications-assessment/
 └── instance/
     └── database.db
 
-    Database Structure
+   Database Structure
 The project currently uses three main tables:
 User
 Stores registered users.
@@ -161,51 +161,39 @@ The user can create subjects.
 The user can create tasks linked to those subjects.
 The user can mark tasks as completed or delete them.
 How to Run the Project
-
 1. Clone the repository
-
 git clone https://github.com/Nebulosa-max/web-services-and-applications-assessment.git
 cd web-services-and-applications-assessment
-
 2. Create and activate a virtual environment
-
 python3 -m venv .venv
 source .venv/bin/activate
-
 3. Install dependencies
-
 pip install -r requirements.txt
-
 4. Run the application
-
 python app.py
-
 5. Open in browser
-
 http://127.0.0.1:5000
-
-# Current Status
-
-- At this point, the following core components are working:
-- Flask application setup
-- database creation
-- user registration and login
-- protected dashboard
-- subject creation and deletion
-- task creation and deletion
-- task completion toggle
-- frontend interaction using JavaScript fetch calls
-- This is still an ongoing project and more features will be added.
-- Planned Next Steps
-- The next stages of development may include:
-- editing subjects
-- editing tasks
-- dashboard statistics
-- better task filtering
-- improved frontend styling
-- integration with a third-party API
-- deployment of the application
-- additional documentation and references
-- Notes
-- This repository contains only files related to the project.
-- The project is being developed incrementally, with regular commits to show progress and maintain consistency.
+Current Status
+At this point, the following core components are working:
+Flask application setup
+database creation
+user registration and login
+protected dashboard
+subject creation and deletion
+task creation and deletion
+task completion toggle
+frontend interaction using JavaScript Fetch calls
+This is still an ongoing project and more features will be added.
+Planned Next Steps
+The next stages of development may include:
+editing subjects
+editing tasks
+dashboard statistics
+better task filtering
+improved frontend styling
+integration with a third-party API
+deployment of the application
+additional documentation and references
+Notes
+This repository contains only files related to the project.
+The project is being developed incrementally, with regular commits to show progress and maintain consistency.
