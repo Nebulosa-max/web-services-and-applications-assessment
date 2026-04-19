@@ -7,7 +7,6 @@
 
 <div class="form-card">
     <h3>Add Subject</h3>
-
     <form id="subject-form">
         <label for="name">Subject Name</label>
         <input type="text" id="name" name="name" required>
@@ -22,5 +21,36 @@
 <div class="form-card" style="margin-top: 2rem;">
     <h3>Your Subjects</h3>
     <ul id="subject-list"></ul>
+</div>
+
+<div class="form-card" style="margin-top: 2rem;">
+    <h3>Add Task</h3>
+    <form id="task-form">
+        <label for="task-title">Task Title</label>
+        <input type="text" id="task-title" required>
+
+        <label for="task-description">Description</label>
+        <input type="text" id="task-description">
+
+        <label for="task-due-date">Due Date</label>
+        <input type="date" id="task-due-date">
+
+        <label for="task-priority">Priority</label>
+        <select id="task-priority">
+            <option value="Low">Low</option>
+            <option value="Medium" selected>Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <label for="task-subject">Subject</label>
+        <select id="task-subject" required></select>
+
+        <button type="submit">Add Task</button>
+    </form>
+</div>
+
+<div class="form-card" style="margin-top: 2rem;">
+    <h3>Your Tasks</h3>
+    <ul id="task-list"></ul>
 </div>
 {% endblock %}

@@ -10,18 +10,17 @@ def create_app():
     db.init_app(app)
     login_manager.init_app(app)
 
-    # Importar modelos
     from models.user import User
     from models.subject import Subject
     from models.task import Task
 
-    # Importar blueprints
     from routes.auth_routes import auth
     from routes.subject_routes import subjects
+    from routes.task_routes import tasks
 
-    # Registar blueprints
     app.register_blueprint(auth)
     app.register_blueprint(subjects)
+    app.register_blueprint(tasks)
 
     @app.route("/")
     def home():

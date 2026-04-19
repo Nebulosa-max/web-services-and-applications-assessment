@@ -117,3 +117,20 @@ li button {
     background-color: #dc2626;
     padding: 0.5rem 0.8rem;
 }
+select {
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+li div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+li div button:first-child {
+    background-color: #2563eb;
+}
+
+li div button:last-child {
+    background-color: #dc2626;
+}
