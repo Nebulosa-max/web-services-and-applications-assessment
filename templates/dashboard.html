@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Dashboard</h2>
+
+<p>Welcome, {{ user.username }}!</p>
+
+<div class="form-card">
+    <h3>Add Subject</h3>
+
+    <form id="subject-form">
+        <label for="name">Subject Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description">
+
+        <button type="submit">Add Subject</button>
+    </form>
+</div>
+
+<div class="form-card" style="margin-top: 2rem;">
+    <h3>Your Subjects</h3>
+    <ul id="subject-list"></ul>
+</div>
+{% endblock %}

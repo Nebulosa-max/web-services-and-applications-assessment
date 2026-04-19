@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <h2>Welcome to StudySprint</h2>
+    <p>Your study and task management web app built with Flask.</p>
+    <div class="hero-buttons">
+        <a class="btn" href="{{ url_for('auth.register') }}">Get Started</a>
+        <a class="btn secondary" href="{{ url_for('auth.login') }}">Login</a>
+    </div>
+</section>
+{% endblock %}
